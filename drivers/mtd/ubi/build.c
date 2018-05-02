@@ -1333,11 +1333,20 @@ static void __init ubi_auto_attach(void)
 	else if (bootdevice == 0)
 	    mtd = open_mtd_device("linux");
 	else {
+<<<<<<< HEAD
 	    mtd = open_mtd_device("linux");
 	    if (IS_ERR(mtd))
 		mtd = open_mtd_device("ubi");
 	    if (IS_ERR(mtd))
 		mtd = open_mtd_device("data");
+=======
+	    mtd = open_mtd_device("ubi");
+	    if (IS_ERR(mtd))
+		mtd = open_mtd_device("data");
+	    if (IS_ERR(mtd))
+		mtd = open_mtd_device("linux");
+
+>>>>>>> 4.4.129
 	}
 	if (!IS_ERR(mtd)) {
 		size_t len;

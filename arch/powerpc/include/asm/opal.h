@@ -21,6 +21,12 @@
 /* We calculate number of sg entries based on PAGE_SIZE */
 #define SG_ENTRIES_PER_NODE ((PAGE_SIZE - 16) / sizeof(struct opal_sg_entry))
 
+<<<<<<< HEAD
+=======
+/* Default time to sleep or delay between OPAL_BUSY/OPAL_BUSY_EVENT loops */
+#define OPAL_BUSY_DELAY_MS	10
+
+>>>>>>> 4.4.129
 /* /sys/firmware/opal */
 extern struct kobject *opal_kobj;
 
