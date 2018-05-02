@@ -284,6 +284,7 @@ source "drivers/net/wireless/ti/Kconfig"
 source "drivers/net/wireless/zd1211rw/Kconfig"
 source "drivers/net/wireless/mwifiex/Kconfig"
 source "drivers/net/wireless/cw1200/Kconfig"
+
 # if RALINK_DEVICE
 # source "drivers/net/wireless/rt3352/rt2860v2_ap/Kconfig"
 # source "drivers/net/wireless/rt3352/rt2860v2_sta/Kconfig"
@@ -294,6 +295,7 @@ source "drivers/net/wireless/cw1200/Kconfig"
 # source "drivers/net/wireless/rt5592/Kconfig"
 # source "drivers/net/wireless/rt7612/rlt_wifi/Kconfig"
 # endif
+
 source "drivers/net/wireless/rsi/Kconfig"
 
 endif # WLAN

@@ -1281,7 +1281,7 @@ static int getbootdevice(void)
 		}
 		p++;
 	}
-	
+
 	if (ipq_smem_bootconfig_v2_info) {
 		int upgrade = ipq_smem_bootconfig_v2_info->upgradeinprogress;
 		for (i = 0; i < ipq_smem_bootconfig_v2_info->numaltpart; i++) {
