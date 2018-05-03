@@ -34,7 +34,7 @@ enum input_mode {
 	savedefconfig,
 	listnewconfig,
 	olddefconfig,
-} input_mode = oldaskconfig;
+};
 
 static int indent = 1;
 static int tty_stdio;
